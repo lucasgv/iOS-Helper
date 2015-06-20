@@ -13,11 +13,32 @@
 
 #pragma mark - Defaults System
 
-//Set NSUserDefaults
+//Set obj in NSUserDefaults
 + (void)setDefaultsObject:(id)object forKey:(NSString *)key;
 
-//Get NSUserDefaults
+//Get obj in NSUserDefaults
 + (id)getObjectForKey:(NSString *)key;
+
+//Set NSDicionary in NSUserDefaults
++ (void)setNSDictionary:(NSDictionary *)value key:(NSString *)key;
+
+//Get NSDicionary in NSUserDefaults
++ (NSDictionary *)getNSDictionaryForKey:(NSString *)key;
+
+//Set NSInteger in NSUserDefaults
++ (void)setIntegerForKey:(NSInteger)value key:(NSString *)key;
+
+//Get NSInteger in NSUserDefaults
++ (NSInteger)getInteger:(NSString *)key;
+
+//Set BOOL in NSUserDefaults
++ (void)setBooleanForKey:(BOOL)value key:(NSString *)key;
+
+//Get BOOL in NSUserDefaults
++ (BOOL)getBoolean:(NSString *)key;
+
+//Delete NSUserDefaults
++ (void)deleteKey:(NSString *)key;
 
 #pragma mark - Imagens
 
@@ -44,10 +65,10 @@
 + (NSDate *)convertDateWithString:(NSString *) dateString andFormat:(NSString *) format;
 
 //Day of week
-+ (NSString *)getDayOfWeekWithDate:(NSDate *) date;
++ (NSString *)dayOfWeekWithDate:(NSDate *) date;
 
 //Get hour, minute and seconds with date
-+ (NSDictionary *) getHourMinuteAndSecondsWithDate:(NSDate *) date;
++ (NSDictionary *) hourMinuteAndSecondsWithDate:(NSDate *) date;
 
 #pragma mark - Internet Connection
 
