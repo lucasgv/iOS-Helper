@@ -38,9 +38,6 @@
 //Day of week
 + (NSString *)dayOfWeekWithDate:(NSDate *) date;
 
-//Get hour, minute and seconds with date
-+ (NSDictionary *) hourMinuteAndSecondsWithDate:(NSDate *) date;
-
 #pragma mark - Internet Connection
 
 //Checks internet connection

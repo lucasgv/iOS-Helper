@@ -177,17 +177,6 @@
     return [dateFormatter stringFromDate:[NSDate date]];
 }
 
-+ (NSDictionary *) hourMinuteAndSecondsWithDate:(NSDate *) date
-{
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
-    NSInteger hour = [components hour];
-    NSInteger minute = [components minute];
-    NSInteger seconds = [components second];
-    
-    return @{@"hour":[NSString stringWithFormat:@"%ld",(long)hour],@"minute":[NSString stringWithFormat:@"%ld",(long)minute],@"second":[NSString stringWithFormat:@"%ld",(long)seconds]}.mutableCopy;
-}
-
 #pragma mark - Internet Connection
 
 + (BOOL)connected
