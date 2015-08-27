@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Lucas Goes. All rights reserved.
 //
 
-#import "Helper.h"
+#import "Prefs.h"
 #import "Reachability.h"
 
-@implementation Helper
+@implementation Prefs
 
 #pragma mark - Defaults System
 

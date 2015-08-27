@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface Helper : NSObject
+@interface Prefs : NSObject
 
 #pragma mark - Defaults System
 
